@@ -209,14 +209,14 @@ namespace Blockcore
                 }
             }
 
-                try {
+            try
+                    {
                        this.logger.LogCritical("Node folder is being used by another instance of the application!");
                     }
-
-              catch {
+             catch
+                    {
                     throw new Exception("Node folder is being used!");
                     }
-
 
             this.nodeLifetime = this.Services.ServiceProvider.GetRequiredService<INodeLifetime>() as NodeLifetime;
             this.fullNodeFeatureExecutor = this.Services.ServiceProvider.GetRequiredService<FullNodeFeatureExecutor>();
