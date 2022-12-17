@@ -197,12 +197,16 @@ namespace Blockcore
             this.nodeRunningLock = new NodeRunningLock(this.DataFolder);
 
             if (!this.nodeRunningLock.TryLockNodeFolder())
-                try {
+            {
+                try
+                {
                        this.logger.LogCritical("Node folder is being used by another instance of the application!");
-                    }
-              catch {
-                    throw new Exception("Node folder is being used!");
-                    }
+                }
+                 catch
+                {
+                        throw new Exception("Node folder is being used!");
+                }
+            }
 
             this.nodeLifetime = this.Services.ServiceProvider.GetRequiredService<INodeLifetime>() as NodeLifetime;
             this.fullNodeFeatureExecutor = this.Services.ServiceProvider.GetRequiredService<FullNodeFeatureExecutor>();

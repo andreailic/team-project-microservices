@@ -5,7 +5,7 @@ using NBitcoin.Crypto;
 
 namespace NBitcoin
 {
-    [Flags]
+    
     public enum BloomFlags : byte
     {
         None = 0,
