@@ -350,9 +350,15 @@ namespace Blockcore.Connection
                 builder.Append(otherBuilder.ToString());
         }
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
        
 =======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
         private static string ToKBSec(ulong bytesPerSec)
         {
             double speed = bytesPerSec / 1024.0;

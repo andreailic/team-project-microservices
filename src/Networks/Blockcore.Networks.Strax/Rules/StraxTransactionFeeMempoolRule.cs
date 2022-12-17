@@ -26,11 +26,19 @@ namespace Blockcore.Networks.Strax.Rules
         public override void CheckTransaction(MempoolValidationContext context)
         {
             // We expect a reward claim transaction to have at least 2 outputs.
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
             bool federationPayment = (context.Transaction.Outputs.Count >= 2);
 =======
             bool federationPayment = !(context.Transaction.Outputs.Count >= 2);
 >>>>>>> a00efd5e0cb3ac18100bfd14d4bbceed15a9c979
+=======
+            bool federationPayment = !(context.Transaction.Outputs.Count >= 2);
+>>>>>>> Stashed changes
+=======
+            bool federationPayment = !(context.Transaction.Outputs.Count >= 2);
+>>>>>>> Stashed changes
 
             // The OP_RETURN output that marks the transaction as cross-chain (and in particular a reward claiming transaction) must be present.
             if (context.Transaction.Outputs.All(o => o.ScriptPubKey != StraxCoinstakeRule.CirrusTransactionTag(((StraxBaseNetwork)this.network).CirrusRewardDummyAddress)))
