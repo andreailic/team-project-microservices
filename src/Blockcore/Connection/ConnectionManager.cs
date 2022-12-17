@@ -350,14 +350,6 @@ namespace Blockcore.Connection
                 builder.Append(otherBuilder.ToString());
         }
 
-
-        private static string ToKBSec(ulong bytesPerSec)
-        {
-            double speed = bytesPerSec / 1024.0;
-            return speed.ToString("0.00") + " KB/S";
-        }
-
-
         /// <inheritdoc />
         public void Dispose()
         {
