@@ -197,7 +197,6 @@ namespace Blockcore
             this.nodeRunningLock = new NodeRunningLock(this.DataFolder);
 
             if (!this.nodeRunningLock.TryLockNodeFolder())
-
             {
                 try
                 {
