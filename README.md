@@ -14,6 +14,20 @@
 | IT78/2019 *Sandra	Stojanov*	|
 | IT25/2019 *Aleksandra	Vrekić*	|
 
+
+## Tech Stack
+
+- Architecture: Microservices
+- Framework: [ASP.NET 7](https://dotnet.microsoft.com/en-us/apps/aspnet/microservices)
+- Database: [Microsoft SQL Server 2022](https://microsoft.com/en-us/sql-server/sql-server-2022)
+- Message Queue: [RabbitMQ](https://rabbitmq.com)
+
+## Diagrams
+| Entities   | Communication       |
+| ---------- | ------------------- |
+| ![URIS_PROJEKAT_UML_v5-Microservices_Connection drawio](https://user-images.githubusercontent.com/15861333/219871960-9048c6e8-e716-461c-b918-97bb924c091d.png) | ![URIS_PROJEKAT_UML_v5-Microservices_Class_Diagram drawio](https://user-images.githubusercontent.com/15861333/219871914-89d83a8f-0d18-42ac-8610-cbb790488e75.png) |
+
+
 [SonarCloud Project ->](https://sonarcloud.io/project/overview?id=URIS-2022_Tim-8)
 
 <hr/>
